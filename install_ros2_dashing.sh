@@ -29,7 +29,7 @@ echo "[Install Turtlesim]"
 sudo apt install ros-dashing-turtlesim -y
 
 #echo "[Install ros2bag]"
-sudo apt install ros-dashing-ros2bag ros-dashing-rosbag2-transport ros-dashing-rosbag2-storage-default-plugins -y
+sudo apt -y install ros-dashing-ros2bag ros-dashing-rosbag2-transport ros-dashing-rosbag2-storage-default-plugins
 
 echo "[Execute ROS2 Enviironment]"
 source /opt/ros/dashing/setup.bash

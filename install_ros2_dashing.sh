@@ -28,8 +28,11 @@ sh -c "echo \"source /opt/ros/dashing/setup.bash\" >> ~/.bashrc"
 echo "[Install Turtlesim]"
 sudo apt install ros-dashing-turtlesim -y
 
-#echo "[Install ros2bag]"
+echo "[Install ros2bag]"
 sudo apt -y install ros-dashing-ros2bag ros-dashing-rosbag2-transport ros-dashing-rosbag2-storage-default-plugins
+
+echo "[Install colcon]"
+sudo apt -y install python3-colcon-common-extensions
 
 echo "[Execute ROS2 Enviironment]"
 source /opt/ros/dashing/setup.bash

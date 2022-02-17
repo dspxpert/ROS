@@ -36,5 +36,8 @@ sudo apt -y install ros-foxy-ros2bag ros-foxy-rosbag2-transport ros-foxy-rosbag2
 echo "[Install colcon]"
 sudo apt -y install python3-colcon-common-extensions
 
+echo "[Install Gazebo]"
+sudo apt -y install ros-foxy-gazebo-ros-pkgs
+
 echo "[Execute ROS2 Enviironment]"
 source /opt/ros/foxy/setup.bash

@@ -25,7 +25,7 @@ sudo apt install python3-argcomplete -y
 
 echo "[Set ROS2 Environment]"
 sh -c "echo \"source /opt/ros/foxy/setup.bash\" >> ~/.bashrc"
-sh -c "echo \"source /opt/ros/foxy/setup.bash\" >> ~/.zshrc"
+sh -c "echo \"source /opt/ros/foxy/setup.zsh\" >> ~/.zshrc"
 
 echo "[Install Turtlesim]"
 sudo apt install ros-foxy-turtlesim -y

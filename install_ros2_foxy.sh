@@ -25,10 +25,6 @@ sudo apt update -y && sudo apt install -y build-essential cmake git libbullet-de
 python3 -m pip install -U argcomplete flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes pytest-repeat pytest-rerunfailures pytest
 sudo apt install --no-install-recommends -y libasio-dev libtinyxml2-dev libcunit1-dev
 
-echo "[Set ROS2 Environment]"
-sh -c "echo \"source /opt/ros/foxy/setup.bash\" >> ~/.bashrc"
-sh -c "echo \"source /opt/ros/foxy/setup.zsh\" >> ~/.zshrc"
-
 echo "[Install Turtlesim]"
 sudo apt install ros-foxy-turtlesim -y
 
@@ -37,6 +33,10 @@ sudo apt install -y ros-foxy-ros2bag ros-foxy-rosbag2-transport ros-foxy-rosbag2
 
 echo "[Install Gazebo]"
 sudo apt install -y ros-foxy-gazebo-ros-pkgs
+
+echo "[Set ROS2 Environment]"
+sh -c "echo \"source /opt/ros/foxy/setup.bash\" >> ~/.bashrc"
+sh -c "echo \"source /opt/ros/foxy/setup.zsh\" >> ~/.zshrc"
 
 echo "[Execute ROS2 Enviironment]"
 source /opt/ros/foxy/setup.bash
